@@ -28,7 +28,8 @@ jobs:
           TMP="$(mktemp -d)"
           mkdir -p "$DST" "$TMP/unpacked"
 
-          cat "$SRC"/images.tar.xz.b64.part* | tr -d '\n\r ' | base64 --decode > "$TMP/images.tar.xz"
+          test "$(find "$SRC" -maxdepth 1 -name 'images.tar.xz.b64.seg*' | wc -l)" -eq 14
+          cat "$SRC"/images.tar.xz.b64.seg* | tr -d '\n\r ' | base64 --decode > "$TMP/images.tar.xz"
           echo 'baa5578ec63b2145af66f8fa66ba4abe1f5d08e5bf9d3b697e0899e026df6d3a  '"$TMP/images.tar.xz" | sha256sum -c -
           tar -xJf "$TMP/images.tar.xz" -C "$TMP/unpacked"
 
