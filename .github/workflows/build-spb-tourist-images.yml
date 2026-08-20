@@ -1,0 +1,74 @@
+name: Build SPb tourist images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'avito/_staging/tourist-protection/sankt-peterburg/manifest.json'
+
+permissions:
+  contents: write
+
+jobs:
+  build-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Decode and verify images
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC='avito/_staging/tourist-protection/sankt-peterburg'
+          DST='avito/tourist-protection/sankt-peterburg'
+          TMP="$(mktemp -d)"
+          mkdir -p "$DST"
+
+          cat "$SRC"/images.zip.b64.part* | tr -d '\n\r ' | base64 --decode > "$TMP/images.zip"
+          echo '4466cb5ed7754cafeab0f0baa662a620c7f869945c08e0b2cafa0de816623bdd  '"$TMP/images.zip" | sha256sum -c -
+          unzip -o "$TMP/images.zip" -d "$TMP/unpacked"
+
+          for n in 01 02 03 04 05 06; do
+            test -f "$TMP/unpacked/$n.jpg"
+            test "$(head -c 2 "$TMP/unpacked/$n.jpg" | xxd -p)" = 'ffd8'
+            test "$(tail -c 2 "$TMP/unpacked/$n.jpg" | xxd -p)" = 'ffd9'
+            cp "$TMP/unpacked/$n.jpg" "$DST/$n.jpg"
+          done
+
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          expected = {
+              '01.jpg': (63409, '5812f30af43db3e286e849eb5c00ce1c3c6546c71167d792a4c4421da6c66e18'),
+              '02.jpg': (51467, '134a9601be10dfcdf8003b0f6527da39377b648e395594cf01dfee9a48e8c968'),
+              '03.jpg': (63026, 'd3355b59940ad3f75b28469e9193becb5fb527f3372e9de012d5dbaf23314e3f'),
+              '04.jpg': (55272, 'ea770d027191d7a6c381a56726f59f9e0d39b3b1fb99e11ad389a8e3016e8e96'),
+              '05.jpg': (56200, 'f93b5ba5c0aa67b40f8021f24f0d85c715f97c940a6fa9b6d1741d8ff2eb4ee3'),
+              '06.jpg': (60745, 'f96d66bc99ede66d81ece9b72b431c0f4169882348c0744f5cb3ad3c0a738a67'),
+          }
+          root = Path('avito/tourist-protection/sankt-peterburg')
+          for name, (size, sha) in expected.items():
+              p = root / name
+              data = p.read_bytes()
+              assert len(data) == size, (name, len(data), size)
+              assert hashlib.sha256(data).hexdigest() == sha, name
+              print(name, len(data), sha)
+          PY
+
+      - name: Commit generated images
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add avito/tourist-protection/sankt-peterburg/*.jpg
+          if git diff --cached --quiet; then
+            echo 'Images are already current.'
+            exit 0
+          fi
+          git commit -m 'Add Alistek tourist images for Saint Petersburg'
+          git push
