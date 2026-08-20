@@ -1,0 +1,89 @@
+{
+  "content": [
+    {
+      "widgetName": "raTextBlock",
+      "title": "Клеммы для проводов АЛИСТЕК — 4 контакта, 5 шт.",
+      "text": "Рычажные соединительные клеммы для монтажа и ремонта проводки. В комплекте 5 штук. Выбирайте количество контактов и фасовку под свою задачу."
+    },
+    {
+      "widgetName": "raMedia",
+      "type": "banner",
+      "blocks": [
+        {
+          "size": "size2",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_01_family.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_01_family.png"
+          },
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "widgetName": "raMedia",
+      "type": "banner",
+      "blocks": [
+        {
+          "size": "size2",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_02_advantages.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_02_advantages.png"
+          },
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "widgetName": "raMedia",
+      "type": "banner",
+      "blocks": [
+        {
+          "size": "size2",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_03_specs.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_03_specs.png"
+          },
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "widgetName": "raMedia",
+      "type": "banner",
+      "blocks": [
+        {
+          "size": "size2",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_04_installation.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_04_installation.png"
+          },
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "widgetName": "raMedia",
+      "type": "banner",
+      "blocks": [
+        {
+          "size": "size2",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_05_uses_packs.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/ozon-rich-content/ozon-rich-content/klemmy/assets/rich_05_uses_packs.png"
+          },
+          "title": "",
+          "text": ""
+        }
+      ]
+    },
+    {
+      "widgetName": "raTextBlock",
+      "title": "Выберите подходящий вариант",
+      "text": "Текущий товар: 4 контакта, 5 шт. Перед монтажом отключите напряжение и используйте изделие только в пределах указанных параметров."
+    }
+  ]
+}
