@@ -26,11 +26,11 @@ jobs:
           SRC='avito/_staging/tourist-protection/sankt-peterburg'
           DST='avito/tourist-protection/sankt-peterburg'
           TMP="$(mktemp -d)"
-          mkdir -p "$DST"
+          mkdir -p "$DST" "$TMP/unpacked"
 
-          cat "$SRC"/images.zip.b64.part* | tr -d '\n\r ' | base64 --decode > "$TMP/images.zip"
-          echo '4466cb5ed7754cafeab0f0baa662a620c7f869945c08e0b2cafa0de816623bdd  '"$TMP/images.zip" | sha256sum -c -
-          unzip -o "$TMP/images.zip" -d "$TMP/unpacked"
+          cat "$SRC"/images.tar.xz.b64.part* | tr -d '\n\r ' | base64 --decode > "$TMP/images.tar.xz"
+          echo 'baa5578ec63b2145af66f8fa66ba4abe1f5d08e5bf9d3b697e0899e026df6d3a  '"$TMP/images.tar.xz" | sha256sum -c -
+          tar -xJf "$TMP/images.tar.xz" -C "$TMP/unpacked"
 
           for n in 01 02 03 04 05 06; do
             test -f "$TMP/unpacked/$n.jpg"
@@ -43,12 +43,12 @@ jobs:
           from pathlib import Path
           import hashlib
           expected = {
-              '01.jpg': (63409, '5812f30af43db3e286e849eb5c00ce1c3c6546c71167d792a4c4421da6c66e18'),
-              '02.jpg': (51467, '134a9601be10dfcdf8003b0f6527da39377b648e395594cf01dfee9a48e8c968'),
-              '03.jpg': (63026, 'd3355b59940ad3f75b28469e9193becb5fb527f3372e9de012d5dbaf23314e3f'),
-              '04.jpg': (55272, 'ea770d027191d7a6c381a56726f59f9e0d39b3b1fb99e11ad389a8e3016e8e96'),
-              '05.jpg': (56200, 'f93b5ba5c0aa67b40f8021f24f0d85c715f97c940a6fa9b6d1741d8ff2eb4ee3'),
-              '06.jpg': (60745, 'f96d66bc99ede66d81ece9b72b431c0f4169882348c0744f5cb3ad3c0a738a67'),
+              '01.jpg': (40082, 'baab874aaab2b5fb36bbcac8757792eae751b30a248197b3e343b2a3166a9520'),
+              '02.jpg': (34539, '37c0a1e9768554a1949a49d9b1d196d0075e3be4575e24eb5e519d872001e1e4'),
+              '03.jpg': (40515, '16f16a774cbbec7d769911b795d59b0a7af995e72d1d0c5f9b7e0c6ad06d1902'),
+              '04.jpg': (36458, '6448244786c780ffc28a3282abb2fdeec4595d2bd67d1e365ee3517b7543958c'),
+              '05.jpg': (36394, '252ac49c8520ff54e6cebf47c0596cbe358cbc1ddbb8902a79b6619149dbdf7e'),
+              '06.jpg': (41126, 'ae3212ddfe1742b2329bf6c2d5f673372201217a95c6904ff6ffac6056abc63c'),
           }
           root = Path('avito/tourist-protection/sankt-peterburg')
           for name, (size, sha) in expected.items():
