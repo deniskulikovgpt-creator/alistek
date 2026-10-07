@@ -1,0 +1,230 @@
+{
+  "content": [
+    {
+      "widgetName": "raShowcase",
+      "type": "roll",
+      "blocks": [
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_01.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_01.jpg",
+            "alt": "Высокопрочный крепёж 10.9 — болты, винты и гайки",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_02.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_02.jpg",
+            "alt": "Преимущества высокопрочного крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_03.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_03.jpg",
+            "alt": "Ассортимент высокопрочного крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_04.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_04.jpg",
+            "alt": "Класс прочности 10.9 для ответственных соединений",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_05.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_05.jpg",
+            "alt": "Точная резьба и геометрия крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_06.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_06.jpg",
+            "alt": "Надёжная фиксация резьбового соединения",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_07.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_07.jpg",
+            "alt": "Материал и защитное покрытие крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_08.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_08.jpg",
+            "alt": "Сферы применения высокопрочного крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_09.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_09.jpg",
+            "alt": "Как подобрать крепёж",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_10.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_10.jpg",
+            "alt": "Размеры и маркировка крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_11.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_11.jpg",
+            "alt": "Комплектация и упаковка крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_12.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_12.jpg",
+            "alt": "Рекомендации по монтажу крепежа",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_13.jpg",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/fasteners-10-9-render-v4/slide_13.jpg",
+            "alt": "Надёжный крепёж для ответственных соединений",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        }
+      ]
+    },
+    {
+      "widgetName": "raTextBlock",
+      "title": {
+        "items": [],
+        "size": "size1",
+        "color": "color1",
+        "align": "center"
+      },
+      "theme": "secondary",
+      "padding": "type2",
+      "gapSize": "s",
+      "text": {
+        "size": "size3",
+        "align": "center",
+        "color": "color1",
+        "items": [
+          {
+            "type": "text",
+            "content": "Высокопрочный крепёж для ответственных резьбовых соединений: болты и винты класса прочности 10.9, а также совместимые гайки класса 10."
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "text",
+            "content": "В ассортименте серии представлены болты с шестигранной головкой, винты с внутренним шестигранником и шестигранные гайки. Для отдельных позиций используются стандарты DIN 933, DIN 931, DIN 912 и DIN 934 — точный стандарт, размер и покрытие проверяйте в характеристиках конкретного товара."
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "text",
+            "content": "Класс прочности 10.9 относится к болтам и винтам и применяется в соединениях с повышенными требованиями к прочности. Для комплектации таких соединений используются гайки соответствующего класса, например класса 10."
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "text",
+            "content": "Крепёж подходит для машиностроения, металлоконструкций, монтажа оборудования, производства, ремонта и сервисных работ. Для оцинкованных позиций защитное покрытие помогает снизить воздействие внешней среды на поверхность металла."
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "br"
+          },
+          {
+            "type": "text",
+            "content": "Перед заказом проверьте диаметр резьбы M, длину, шаг резьбы, стандарт DIN/ISO, тип головки, покрытие и количество в упаковке. При монтаже соблюдайте требования проекта и технической документации к инструменту и моменту затяжки."
+          }
+        ]
+      }
+    }
+  ],
+  "version": 0.3
+}
