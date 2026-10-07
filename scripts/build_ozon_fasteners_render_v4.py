@@ -134,3 +134,5 @@ payload = json.dumps(rich, ensure_ascii=False, indent=2)
 (ROOT / "richcontent_10_9_ozon.json").write_text(payload, encoding="utf-8")
 (ROOT / "richcontent_10_9_ozon.txt").write_text(payload, encoding="utf-8")
 print("Generated 13 slides, preview, JSON and TXT.")
+
+# workflow trigger
