@@ -1,0 +1,82 @@
+name: Build Ozon fasteners 10.9 from approved render
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/build_ozon_fasteners_render_v4.py'
+      - 'ozon/rich-content/fasteners-10-9-render-v4/source_render.b64'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Pillow
+        run: python -m pip install --disable-pip-version-check pillow
+
+      - name: Build images and Ozon JSON
+        run: python scripts/build_ozon_fasteners_render_v4.py
+
+      - name: Verify output
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image
+          import json, re
+          root = Path('ozon/rich-content/fasteners-10-9-render-v4')
+          files = sorted(root.glob('slide_*.jpg'))
+          assert [p.name for p in files] == [f'slide_{i:02d}.jpg' for i in range(1, 14)]
+          for p in files:
+              with Image.open(p) as im:
+                  assert im.format == 'JPEG', (p, im.format)
+                  assert im.size == (1440, 720), (p, im.size)
+              assert p.stat().st_size < 10 * 1024 * 1024
+          with Image.open(root/'preview.jpg') as im:
+              assert im.format == 'JPEG'
+          data = json.loads((root/'richcontent_10_9_ozon.json').read_text(encoding='utf-8'))
+          assert data['version'] == 0.3
+          assert data['content'][0]['widgetName'] == 'raShowcase'
+          assert data['content'][0]['type'] == 'roll'
+          blocks = data['content'][0]['blocks']
+          assert len(blocks) == 13
+          for i,b in enumerate(blocks,1):
+              img = b['img']
+              assert img['src'] == img['srcMobile']
+              assert img['src'].startswith('https://raw.githubusercontent.com/')
+              assert img['src'].endswith(f'slide_{i:02d}.jpg')
+              assert img['position'] == 'width_full'
+              assert img['positionMobile'] == 'width_full'
+              assert img['widthMobile'] == 1440
+              assert img['heightMobile'] == 720
+          print('Verification passed.')
+          PY
+
+      - name: Commit generated files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add ozon/rich-content/fasteners-10-9-render-v4/slide_*.jpg
+          git add ozon/rich-content/fasteners-10-9-render-v4/preview.jpg
+          git add ozon/rich-content/fasteners-10-9-render-v4/richcontent_10_9_ozon.json
+          git add ozon/rich-content/fasteners-10-9-render-v4/richcontent_10_9_ozon.txt
+          git rm -f --ignore-unmatch ozon/rich-content/fasteners-10-9-render-v4/_source_render.jpg
+          if git diff --cached --quiet; then
+            echo 'Generated files are already current.'
+            exit 0
+          fi
+          git commit -m 'Build Ozon rich content from approved 10.9 render'
+          git push
