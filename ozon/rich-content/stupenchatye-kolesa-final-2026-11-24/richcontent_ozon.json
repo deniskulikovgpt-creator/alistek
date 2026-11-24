@@ -1,0 +1,83 @@
+{
+  "content": [
+    {
+      "widgetName": "raShowcase",
+      "type": "roll",
+      "blocks": [
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/01_Oblozhka_1440x720.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/01_Oblozhka_1440x720.png",
+            "alt": "Ступенчатые колёса для диванов — баннер 1",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/02_Shest_Realnyh_Modeley_1440x720.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/02_Shest_Realnyh_Modeley_1440x720.png",
+            "alt": "Ступенчатые колёса для диванов — баннер 2",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/03_Tablitsa_Razmerov_1440x720.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/03_Tablitsa_Razmerov_1440x720.png",
+            "alt": "Ступенчатые колёса для диванов — баннер 3",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/04_Klyuchevye_Parametry_1440x720.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/04_Klyuchevye_Parametry_1440x720.png",
+            "alt": "Ступенчатые колёса для диванов — баннер 4",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/05_Originalnye_Chertezhi_1440x720.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/05_Originalnye_Chertezhi_1440x720.png",
+            "alt": "Ступенчатые колёса для диванов — баннер 5",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        },
+        {
+          "imgLink": "",
+          "img": {
+            "src": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/06_Proverka_Pered_Zamenoy_1440x720.png",
+            "srcMobile": "https://raw.githubusercontent.com/deniskulikovgpt-creator/alistek/main/ozon/rich-content/stupenchatye-kolesa-final-2026-11-24/06_Proverka_Pered_Zamenoy_1440x720.png",
+            "alt": "Ступенчатые колёса для диванов — баннер 6",
+            "position": "width_full",
+            "positionMobile": "width_full",
+            "widthMobile": 1440,
+            "heightMobile": 720
+          }
+        }
+      ]
+    }
+  ],
+  "version": 0.3
+}
